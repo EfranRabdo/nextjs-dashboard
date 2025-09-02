@@ -1,6 +1,12 @@
 import { clsx } from 'clsx';
 import Link from 'next/link';
-import { lusitana } from '@/app/ui/fonts';
+import { Lusitana } from 'next/font/google';
+
+const lusitana = Lusitana({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-lusitana',
+});
 
 interface Breadcrumb {
   label: string;
